@@ -16,6 +16,26 @@ html{
     /* border: #7F56D9 solid 4px; */
 }
 
+.forgotpasswordleftscreen{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center; 
+    
+}
+
+.signinleftscreen{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center; 
+    
+}
+
 .card{
     display: flex;
     flex-direction: column;
@@ -47,14 +67,16 @@ h2{
     margin: 0;
     text-align: left;
     width: 500px;
+    font-size: 14px;
     
     /* border: #7F56D9 solid 4px; */
 }
 
 .mainform{
     min-width: 700px;
-    height: 80%;
+    height: 75%;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
     padding: 10px;
@@ -62,17 +84,81 @@ h2{
     /* border: #7F56D9 solid 4px; */
 }
 
+.signinmainform{
+    min-width: 700px;
+    height: 45%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.signincard{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    top: 50%;
+    height:"50vh",   
+}
+
+.forgotpasswordcard{
+    top: 50%;
+    height:"50vh",
+}
+
+.forgotpasswordform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.alertbox{
+    width:65%;
+    height: 5%;
+    margin-top: 10px;
+}
+
 .forminput {
     width:70%;
-    height: 20%;
-    margin-top: 20px;
-    
     /* border: #7F56D9 solid 4px; */
 }
 
-.confirmpasswordinput{
-    margin-top: 20px;
+.signinforminput{
+    margin: 10px 10px;
 }
+
+.forgotpasswordforminput{
+    width:85%;
+    margin: 30px;
+}
+
+.loginlink{
+    display: flex;
+    justify-content: center;
+}
+.loginlink p{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.formbutton{
+    background:#c050e2;
+    width:40%;
+}
+
+.signinloginlink{
+    display: flex;
+    flex-direction: column;
+}
+
+.link{
+    text-decoration: none;
+}
+
+/* RIGHT SCREEN */
 
 .rightscreen{
     height: 100vh;
@@ -104,7 +190,3 @@ h2{
     right: 80px;
 }
 
-.loginlink{
-    display: flex;
-    justify-content: center;
-}
