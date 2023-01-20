@@ -21,7 +21,7 @@ export default function ForgotPassword(){
             setError("")
             setLoading(true)
 
-            resetPassword(emailRef.current.value)
+            await resetPassword(emailRef.current.value)
 
             setSeverity("success") 
             setError("Email has been sent to youur email.")

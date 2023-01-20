@@ -107,6 +107,19 @@ h2{
     height:"50vh",
 }
 
+.dashboardcard{
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    height:"50vh",
+}
+
+.dashboardcard .hdiv{
+    padding: 0;
+    margin: 0;
+
+}
+
 .forgotpasswordform{
     display: flex;
     flex-direction: column;

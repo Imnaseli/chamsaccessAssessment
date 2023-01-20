@@ -3,10 +3,11 @@ import React, { useRef , useState } from "react"
 import './css/index.css'
 import { useAuth } from "../services/AuthContext"
 import SignupLogo from './img/signup.png'
-import {Link } from "react-router-dom"
+import {Link , useNavigate } from "react-router-dom"
+
 
 export default function Signup(){
-
+    const navigate  = useNavigate()
     const firstnameRef = useRef()
     const lastnameRef = useRef()
     const emailRef = useRef()
@@ -31,11 +32,12 @@ export default function Signup(){
             setError("")
             setLoading(true)
 
-            createuser(emailRef.current.value, passwordRef.current.value)
+            await createuser(emailRef.current.value, passwordRef.current.value)
             console.log(emailRef.current.value, passwordRef.current.value)
 
             setSeverity("success") 
             setError("Account Created")
+            navigate('/signin')
 
         } catch (error) {
             setError("")

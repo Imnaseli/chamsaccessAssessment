@@ -3,10 +3,10 @@ import React, { useRef , useState } from "react"
 import './css/index.css'
 import { useAuth } from "../services/AuthContext"
 import Logo from './img/signin.png'
-import {Link} from "react-router-dom"
+import {Link , useNavigate} from "react-router-dom"
 
 export default function Signin(){
-
+    const navigate = useNavigate()
     const emailRef = useRef()
     const passwordRef = useRef()
     const [loading , setLoading ] = useState(false)
@@ -22,12 +22,12 @@ export default function Signin(){
             setError("")
             setLoading(true)
 
-            signinuser(emailRef.current.value, passwordRef.current.value)
+            await signinuser(emailRef.current.value, passwordRef.current.value)
             console.log(emailRef.current.value, passwordRef.current.value)
 
             setSeverity("success") 
             setError("Successfully Signed in")
-
+            navigate('/')
         } catch (error) {
             setError("")
             setSeverity("error")
