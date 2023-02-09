@@ -1,10 +1,8 @@
-## Authentication system with react and node
+## Authentication system with react and Firebase.
 
 ![sign in page](./publicimages/signin.JPG )
 ![reset password page](./publicimages/resetpassword.JPG )
 
-### Theme color
-- Purple = #7F56D9
 
 ### Available Scripts
 In the project directory, you can run:
